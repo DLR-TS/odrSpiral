@@ -7,7 +7,7 @@
  *  using methods of CEPHES library
  * ---------------------------------------------------
  *  first edit:	09.03.2010 by M. Dupuis @ VIRES GmbH
- *  last mod.:  09.03.2010 by M. Dupuis @ VIRES GmbH
+ *  last mod.:  28.04.2017 by Michael Scholz @ German Aerospace Center (DLR)
  * ===================================================
     Copyright 2010 VIRES Simulationstechnologie GmbH
 
@@ -36,7 +36,12 @@
 
 /* ====== INCLUSIONS ====== */
 #include <stdio.h>
-#include <unistd.h>
+#ifdef _WIN64
+   #include <io.h>
+#else
+   #include <unistd.h>
+#endif
+#define _USE_MATH_DEFINES
 #include <math.h>
 
 /* ====== LOCAL VARIABLES ====== */
