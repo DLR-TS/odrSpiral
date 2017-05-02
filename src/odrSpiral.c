@@ -7,9 +7,10 @@
  *  using methods of CEPHES library
  * ---------------------------------------------------
  *  first edit:	09.03.2010 by M. Dupuis @ VIRES GmbH
- *  last mod.:  28.04.2017 by Michael Scholz @ German Aerospace Center (DLR)
+ *  last mod.:  02.05.2017 by Michael Scholz @ German Aerospace Center (DLR)
  * ===================================================
     Copyright 2010 VIRES Simulationstechnologie GmbH
+	Copyright 2017 German Aerospace Center (DLR)
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -36,11 +37,13 @@
 
 /* ====== INCLUSIONS ====== */
 #include <stdio.h>
-#ifdef _WIN64
+#ifdef _WIN32 || _WIN64
+   /* Probably Windows */
    #include <io.h>
 #else
+   /* Supposedly Unix */
    #include <unistd.h>
-#endif
+#endif 
 #define _USE_MATH_DEFINES
 #include <math.h>
 
