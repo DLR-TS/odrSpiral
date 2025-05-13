@@ -1,5 +1,6 @@
 # odrSpiral
-Exemplary implementation of Euler spirals as used for clothoids in OpenDRIVE. Originaly published by [VIRES Simulationstechnologie GmbH](https://vires.com/) in the formerly available OpenDRIVE download section:
+
+Exemplary implementation of Euler spirals as used for clothoids in OpenDRIVE. Originally published by [VIRES Simulationstechnologie GmbH](https://vires.com/) in the formerly available OpenDRIVE download section:
 
 > This small collection of routines shall illustrate the computation of Euler spirals as they are to be used in OpenDRIVE applications.
 >  
@@ -12,10 +13,10 @@ Exemplary implementation of Euler spirals as used for clothoids in OpenDRIVE. Or
 > All software is provided "AS IS".
 
 ## Building
-### Building on Unix
-With CMake as plattform-independent build tool **odrSpiral** can be configured for various native build environments. An exemplary configuration for Make under Unix:
 
-```
+With CMake as platform-independent build tool **odrSpiral** can be configured for various native build environments. An exemplary configuration for Make under Unix:
+
+```bash
 cd odrSpiral
 mkdir build
 cd build
@@ -24,7 +25,7 @@ cmake ..
 
 To build the project afterwards run
 
-```
+```bash
 make
 ```
 
